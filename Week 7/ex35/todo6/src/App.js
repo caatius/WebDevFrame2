@@ -30,7 +30,7 @@ function App() {
   }
 
 function edit() {
-  const json = JSON.stringify({id: editTask.id, description: editDescription})
+  const json = JSON.stringify({id: editTask.id,description: editDescription})
   axios.put(URL + 'edit', json,{
     headers: {
       'Content-Type' : 'application/json'
